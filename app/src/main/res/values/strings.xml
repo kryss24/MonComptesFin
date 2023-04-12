@@ -13,7 +13,7 @@
     <string name="title_dashboard">Decouvrir</string>
     <string name="title_notifications">Genre</string>
     <string name="title_compte">Compte</string>
-    <string name="security">Security</string>
+    <string name="security">Securite</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
