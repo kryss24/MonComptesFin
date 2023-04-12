@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF"
+    android:textColor="#000000">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="393dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="6dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/icon"
+                tools:ignore="ContentDescription"
+                tools:srcCompat="@drawable/icon" />
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/monNom"
+                android:textSize="30sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="       ID"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="234dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/ct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/iconNot"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/text_notif"
+        app:layout_constraintStart_toStartOf="@+id/text_notif"
+        app:layout_constraintTop_toTopOf="@+id/text_notif"
+        app:srcCompat="@drawable/cloche"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/cloche" />
+
+    <TextView
+        android:id="@+id/text_notif"
+        android:layout_width="375dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/notif"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+    <ImageView
+        android:id="@+id/iconCentre"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/text_centre_activite"
+        app:layout_constraintStart_toStartOf="@+id/text_centre_activite"
+        app:layout_constraintTop_toTopOf="@+id/text_centre_activite"
+        app:layout_constraintVertical_bias="0.391"
+        app:srcCompat="@drawable/etoile"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/etoile" />
+
+    <TextView
+        android:id="@+id/text_centre_activite"
+        android:layout_width="375dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/CenAct"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_notif" />
+
+    <ImageView
+        android:id="@+id/iconEval"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/text_evaluation"
+        app:layout_constraintStart_toStartOf="@+id/text_evaluation"
+        app:layout_constraintTop_toTopOf="@+id/text_evaluation"
+        app:layout_constraintVertical_bias="0.478"
+        app:srcCompat="@drawable/note"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/note" />
+
+    <TextView
+        android:id="@+id/text_evaluation"
+        android:layout_width="375dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/eval"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_centre_activite" />
+
+    <ImageView
+        android:id="@+id/iconCentreAide"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/text_centre_aide"
+        app:layout_constraintStart_toStartOf="@+id/text_centre_aide"
+        app:layout_constraintTop_toTopOf="@+id/text_centre_aide"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/aide"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/aide" />
+
+    <TextView
+        android:id="@+id/text_centre_aide"
+        android:layout_width="375dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/CenAid"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_evaluation" />
+
+    <ImageView
+        android:id="@+id/iconpartager"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/text_share"
+        app:layout_constraintStart_toStartOf="@+id/text_share"
+        app:layout_constraintTop_toTopOf="@+id/text_share"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/share"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/share" />
+
+    <TextView
+        android:id="@+id/text_share"
+        android:layout_width="375dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/shar"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_centre_aide" />
+
+    <ImageView
+        android:id="@+id/iconReg"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/text_reglage"
+        app:layout_constraintStart_toStartOf="@+id/text_reglage"
+        app:layout_constraintTop_toTopOf="@+id/text_reglage"
+        app:layout_constraintVertical_bias="0.434"
+        app:srcCompat="@drawable/reglages"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/reglages" />
+
+    <TextView
+        android:id="@+id/text_reglage"
+        android:layout_width="375dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/param"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_share" />
+
+    <ImageView
+        android:id="@+id/iconsec"
+        android:layout_width="47dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/text_securite"
+        app:layout_constraintStart_toStartOf="@+id/text_securite"
+        app:layout_constraintTop_toTopOf="@+id/text_securite"
+        app:srcCompat="@drawable/setting"
+        tools:ignore="ContentDescription"
+        tools:srcCompat="@drawable/setting" />
+
+    <TextView
+        android:id="@+id/text_securite"
+        android:layout_width="375dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/security"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_reglage" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

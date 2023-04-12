@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MonComptes</string>
+    <string name="monid">ID:</string>
+    <string name="monNom">Your Name</string>
+    <string name="ct">Se connecter/Renouveler mon Abonnement</string>
+    <string name="notif">Notification</string>
+    <string name="CenAct">Centre d\'activiter</string>
+    <string name="eval">Evaluation</string>
+    <string name="CenAid">Centre d\'aide</string>
+    <string name="shar">Partager Biblio</string>
+    <string name="param">Reglage</string>
+    <string name="title_home">biblio</string>
+    <string name="title_dashboard">Decouvrir</string>
+    <string name="title_notifications">Genre</string>
+    <string name="title_compte">Compte</string>
+    <string name="security">Security</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
